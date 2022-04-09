@@ -1,0 +1,668 @@
+html,
+body {
+  height: 100%;
+  background: #f2f2f2;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1200px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+h1 {
+  font-family: "Rondal-Regula";
+}
+section {
+  position: relative;
+}
+/* sec1 section */
+.sec1 {
+  width: 100%;
+  height: 950px;
+  background: url(../image/main/section1_bg.png) no-repeat center;
+  background-size: cover;
+}
+.sec1 .sec1_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 650px;
+  height: 650px;
+}
+.sec1 .sec1_container .change-image {
+  width: 100%;
+  height: 100%;
+  background: url("../image/main/section1_img1_on.png") no-repeat center;
+
+  transition: all 1s;
+}
+
+.sec1 .sec1_container h1 {
+  font-size: 5em;
+  color: #fff;
+}
+.sec1 .sec1_container .left_text {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  z-index: 999;
+  animation: show-left 0.3s 0.5s linear both;
+}
+.sec1 .sec1_container .right_text {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  z-index: 999;
+  animation: show-right 0.3s 1s linear both;
+}
+.sec1 button {
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.sec1 .light {
+  position: absolute;
+  left: 8%;
+  bottom: 5px;
+  color: red;
+}
+.sec1 .black {
+  position: absolute;
+  right: 8%;
+  bottom: 5px;
+}
+@keyframes show-left {
+  from {
+    transform: translateX(-350px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-250px);
+    opacity: 1;
+  }
+}
+@keyframes show-right {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+}
+/* sec2 section */
+.sec2 {
+  max-width: 1320px;
+  margin: 0 auto;
+  height: 80vh;
+}
+.sec2 h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 100px 0;
+}
+
+.sec2 .slide_banner {
+  position: relative;
+}
+
+.sec2 .slide_banner .item_text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 100px;
+}
+.sec2 .slide_banner .item_text h1 {
+  width: 519px;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: rgba(238, 238, 238, 0.4);
+  border-radius: 20px 0 0 0;
+  padding: 10px 20px;
+  margin-bottom: 0px;
+}
+.sec2 .slide_banner .item_text p {
+  width: 519px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  background-color: rgba(238, 238, 238, 0.4);
+  border-radius: 0 0 20px 0;
+  padding: 10px 20px 0 20px;
+  line-height: 1.6;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: #dddddd;
+  border-radius: 50%;
+  margin: 50px 5px 0 5px;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+  background: #000;
+  transform: scale(1.2);
+}
+
+.slick-dots li button {
+  display: none;
+}
+/* sec3 section */
+.sec3 {
+  height: auto;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.sec3 h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 100px 0 50px 0;
+}
+.sec3 .intro_items {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 10vh 0;
+}
+.sec3 .intro_items .left_item {
+  position: relative;
+  height: 390px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sec3 .intro_items .left_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec3 .intro_items .left_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, rgb(43, 43, 43), transparent);
+}
+
+.sec3 .intro_items .left_item p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+
+  z-index: 10;
+}
+
+.sec3 .intro_items .right_item .side_item {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sec3 .intro_items .right_item .side_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, rgb(43, 43, 43), transparent);
+}
+.sec3 .intro_items .right_item .side_item > p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  z-index: 10;
+}
+.sec3 .intro_items .right_item .side_item > img {
+  float: right;
+  transform: scale(1);
+}
+.sec3 .intro_items .right_item .side_item:nth-child(1) {
+  margin-bottom: 30px;
+}
+.sec3 .left_item img,
+.sec3 .right_item .side_item img {
+  transition: 0.5s;
+}
+.sec3 .left_item:hover img,
+.sec3 .right_item .side_item:hover img {
+  transform: scale(1.1);
+}
+
+/* sec4 section */
+.sec4 {
+  /*height: 300vh;*/
+  background: #000;
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.sec4 .scroll_logo {
+  width: 700px;
+  margin: 0 auto 100px;
+  /*border: 2px solid crimson;*/
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.sec4 .scroll_logo img {
+  margin-bottom: 20px;
+}
+.sec4 .scroll_logo .scroll_text {
+  text-align: center;
+  line-height: 1.8;
+}
+.sec4 .scroll_logo .scroll_text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.sec4 .scroll_logo .scroll_text h1 span {
+  color: crimson;
+}
+.sec4 .scroll_logo .scroll_text p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.sec4-contents {
+  position: relative;
+}
+.sec4-contents:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, black, transparent);
+}
+
+/* 비율 깨지기때문에 값 넣지 말것
+
+
+
+/* sec4_plus section */
+.sec4_plus {
+  position: relative;
+}
+
+.sec4_plus h1 {
+  max-width: 1320px;
+  margin: 0 auto;
+  font-size: 3em;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 200px;
+  margin-bottom: 50px;
+}
+.sec4_plus p {
+  max-width: 1320px;
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.8;
+}
+.sec4_plus .plus_wrap {
+  max-width: 1600px;
+  height: 220vh;
+  margin: 0 auto;
+  padding-top: 20vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+.sec4_plus .plus_wrap > div {
+  transition: 0.1s;
+}
+.sec4_plus .plus_wrap .leftArea {
+  padding-top: 30vh;
+}
+.sec4_plus .plus_wrap .centerArea {
+  padding-top: 60vh;
+}
+.sec4_plus .plus_wrap .rightArea {
+  padding-top: 40vh;
+}
+.sec4_plus .plus_wrap .itemTop,
+.sec4_plus .plus_wrap .centerArea .itemBottom {
+  margin-bottom: 300px;
+}
+
+.sec4_plus .plus_wrap .plus_item {
+  position: relative;
+  width: 400px;
+
+  border: 1px solid rgb(71, 56, 56);
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  transform: translate(0, 0);
+}
+.sec4_plus .plus_wrap .plus_item img {
+  width: 100%;
+
+  border-radius: 20px 20px 0 0;
+  box-shadow: 5px 5px 10px -5px;
+}
+.sec4_plus .plus_item .item_desc {
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
+  border-radius: 0 0 20px 20px;
+}
+.sec4_plus .plus_item .item_desc h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.sec4_plus .plus_item .item_desc p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* Crack Motion */
+.sec4 .sec4-crack {
+  width: 1096px;
+  margin: 0 auto;
+  padding-bottom: 50vh;
+  overflow: hidden;
+}
+.sec4 .sec4-crack .crack-head {
+  display: flex;
+  justify-content: center;
+}
+.sec4 .sec4-crack .crack-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.sec4 .sec4-crack .crack-head .crack1 {
+  transform: translate(-1000px, -500px);
+  transition: 1s;
+}
+.sec4 .sec4-crack .crack-head .crack2 {
+  transform: translate(1000px, -500px);
+  transition: 1s;
+}
+.sec4 .sec4-crack .crack-bottom .crack3 {
+  transform: translate(-1000px, 500px);
+  transition: 1s;
+}
+.sec4 .sec4-crack .crack-bottom .crack4 {
+  transform: translate(1000px, 500px);
+  transition: 1s;
+}
+.sec4 .sec4-crack .crack-des {
+  color: #fff;
+  line-height: 1.4;
+  text-align: center;
+  transform: translateY(500px);
+  transition: 3s;
+  opacity: 0;
+}
+.sec4 .sec4-crack h1 {
+  width: 510px;
+  font-size: 3em;
+  font-weight: 600;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.sec4 .sec4-crack h1 > span {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999;
+  float: right;
+}
+.sec4 .sec4-crack p {
+  width: 720px;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0 auto;
+}
+/* sec5 section */
+.sec5 {
+  background: #f2f2f2;
+}
+
+.sec5 .scroll_wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.sec5 .scroll_wrap .center_motion {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  font-weight: 400;
+  z-index: 100;
+  margin-left: 15px;
+}
+.sec5 .scroll_wrap .center_wt {
+  color: #fff;
+}
+.sec5 .scroll_wrap .scroll_left {
+  position: relative;
+  width: 50%;
+  height: 900px;
+  background-color: #fff;
+  text-align: center;
+}
+.sec5 .scroll_wrap .scroll_left img {
+  padding-top: 120px;
+  transform: translateX(-400px);
+  opacity: 0;
+  transition: 2s;
+}
+.sec5 .scroll_wrap .scroll_left h1 {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0);
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+.sec5 .scroll_wrap .scroll_left p {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, 0);
+
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.sec5 .scroll_wrap .scroll_right {
+  position: relative;
+  width: 50%;
+  height: 900px;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left {
+  padding-left: 277px;
+  padding-top: 164px;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 2s;
+}
+.sec5 .scroll_wrap .scroll_right h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.sec5 .scroll_wrap .scroll_right p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 26px;
+}
+.sec5 .scroll_wrap .scroll_right p:nth-child(1) {
+  margin-bottom: 32px;
+}
+.sec5 .scroll_wrap .scroll_right img {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .more_bl {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+.sec5 .scroll_wrap .wtxt {
+  background: #dbd5c9;
+  color: #fff;
+}
+.sec5 .scroll_wrap .wtxt_intro {
+  background: #465f7c;
+  color: #fff;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .more_wt {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .line_bl {
+  position: relative;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .line_bl::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  transition: 0.5s;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .line_bl:hover::after {
+  width: 150px;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .line_wt {
+  position: relative;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .line_wt::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  transition: 0.5s;
+}
+.sec5 .scroll_wrap .scroll_right .txt_left .line_wt:hover::after {
+  width: 210px;
+}
+/* sec6 section */
+.sec6 {
+  background: #f2f2f2;
+  overflow: hidden;
+}
+.sec6 .visiter_wrap {
+  text-align: center;
+  padding: 100px 0;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.sec6 .visiter_wrap h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 74px;
+}
+.sec6 .visiter_wrap p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #999;
+  line-height: 1.6;
+}
+.sec6 .visiter_wrap span {
+  color: #000;
+}
+.sec6 .visiter_wrap span:hover {
+  text-decoration: underline;
+}
+.sec6 .event_wrap {
+  position: relative;
+  height: 434px;
+  background: #dbd5c9;
+}
+.sec6 .event_wrap img {
+  width: 100%;
+  height: 100%;
+}
+.sec6 .event_wrap .event_text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  color: #fff;
+  padding: 100px;
+}
+.sec6 .event_wrap .event_text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.sec6 .event_wrap .event_text p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.sec6 .event_wrap .event_text a {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 40px;
+}
+
+.sec6 .event_wrap .event_text a::before {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  content: "";
+  background: url(../image/main/mail_icon.png);
+}
+.sec6 .event_wrap .event_text span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  padding-left: 20px;
+}
+.sec6 span {
+  cursor: pointer;
+  position: relative;
+}

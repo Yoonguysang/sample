@@ -1,0 +1,144 @@
+@media (max-width: 767px) {
+  /* sec1 section */
+  .sec1 {
+    height: 100vh;
+  }
+  .sec1 img {
+    object-fit: cover;
+  }
+
+  .sec1 .sub_menu {
+    display: none;
+  }
+
+  .sec1 .sub_menu ul {
+    display: block;
+    padding-top: 10px;
+  }
+  .sec1 .sub_menu ul li {
+    float: left;
+    margin: 10px 28px;
+  }
+  .sec1 .sub_menu ul li:nth-child(4) {
+    margin-left: 70px;
+  }
+  .sec1 .sub_menu ul li a {
+    font-size: 0.8em;
+  }
+  /* sec2 section */
+
+  .sec2 .sec2_des h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .sec2 .sec2_des p {
+    margin: 0 20px;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .sec2 .sec2_intro {
+    margin: -5vh -15vh;
+  }
+  .sec2 .sec2_intro:nth-child(even) {
+    transform: scale(0.5);
+  }
+  .sec2 .sec2_intro:nth-child(odd) {
+    transform: scale(0.5);
+  }
+
+  /* sec3 section */
+  .sec3 {
+    height: 90vh;
+    background: #000;
+  }
+  .sec3 .sec3_des {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .sec3 .sec3_video_con {
+    height: 100%;
+  }
+
+  .sec3 .sec3_video {
+    height: 100%;
+  }
+
+  .sec3 .video_des {
+    width: 100%;
+  }
+  .sec3 .video_des h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 50px 10px;
+    text-transform: uppercase;
+  }
+  .sec3 .video_des p {
+    font-size: 0.8em;
+    font-weight: 300;
+    margin: 0 10px;
+  }
+  /* sec4 section */
+  .sec4 {
+    display: none;
+  }
+  /* sec5 section */
+  .sec5 h1 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    color: #db0a5b;
+  }
+  .sec5 .sec_wrap {
+    display: block;
+  }
+  .sec5 .sec_wrap .sec5_left {
+    line-height: 1.6;
+  }
+  .sec5 .sec_wrap .sec5_left h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .sec5 .sec_wrap .sec5_left p {
+    display: none;
+  }
+  .sec5 .sec_wrap .sec5_right {
+    overflow: hidden;
+  }
+  .sec5 .sec_wrap .sec5_right img {
+    width: 100%;
+  }
+  /* sec6 section */
+
+  .sec6 .sec6_title h1 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .sec6 .sec6_title .line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 50px;
+  }
+  .sec6 .sec6_intro {
+    text-align: center;
+    padding-top: 100px;
+    line-height: 1.4;
+  }
+  .sec6 .sec6_intro h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .sec6 .sec6_intro p {
+    font-size: 0.8em;
+    font-weight: 300;
+    margin: 0 20px;
+  }
+}
